@@ -5,6 +5,9 @@ import UseEffectComponent from './components/useEffect'
 import CountWithEffects from './components/cleanupEffect'
 import APIEffect from './components/APIEffects'
 import UseRefComponent from './components/useRef'
+import { ThemeProvider } from './components/useContext/useContext'
+import Header from './components/useContext/HeaderContext'
+
 import './App.css'
 
 function App() {
@@ -46,6 +49,16 @@ function App() {
     }}>
       <h3>UseRef</h3>
       <UseRefComponent/>
+    </div>
+
+
+    <div style={{
+      marginBottom: "20px", 
+      borderRadius: "15px"
+    }}>
+      <ThemeProvider>
+        <Header/>
+      </ThemeProvider>
     </div>
   </div>
   
